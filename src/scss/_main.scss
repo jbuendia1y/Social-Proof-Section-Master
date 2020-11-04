@@ -1,0 +1,36 @@
+
+.box__container{
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.main{
+    display: grid;
+    margin-bottom: 2em;
+
+    &__text{
+        text-align: center;
+    }
+
+    &__tittle{
+        font-weight: 700;
+        color: $text-color;
+    }
+
+    &__paragraph{
+        line-height: 25px;
+        letter-spacing: 1.5px;
+        color: $text-color-2;
+        position: relative;
+    }
+
+    &__item{
+        &-grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,auto);
+            justify-content: center;
+            row-gap: 1em;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    background-color: $bg-stars;
+    border-radius: 10px;
+
+    &__img{
+        margin-top: .5em;
+        
+        &-mg-center{
+            margin: 0 .2em;
+        }
+    }
+
+    &__text{
+        margin-bottom: .5em;
+        color: $text-color;
+        font-weight: 700;
+    }
+}
