@@ -32,3 +32,17 @@ body{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+@media screen and (min-width:1024px){
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(/images/bg-pattern-top-desktop.svg),url(/images/bg-pattern-bottom-desktop.svg);
+    }
+
+    .attribution{
+        margin-top: auto;
+    }
+}
