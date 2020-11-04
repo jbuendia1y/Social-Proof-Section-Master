@@ -34,3 +34,42 @@
         }
     }
 }
+
+@media screen and (min-width:1024px){
+    .main{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+
+        &__text{
+            text-align: start;
+        }
+
+        &__tittle{
+            padding-right: 4em;
+            font-size: 40px;
+            margin-bottom: .1em;
+        }
+
+        &__paragraph{
+            margin-top: 0;
+            letter-spacing: .5px;
+        }
+
+        &__item{
+            &-grid{
+                grid-template-columns: repeat(2,25px) 1fr repeat(2,25px);
+            }
+        }
+    }
+
+    .item:nth-child(1){
+        grid-column: 1/4;
+    }
+    .item:nth-child(2){
+        grid-column: 2/5;
+    }
+
+    .item:nth-child(3){
+        grid-column: 3/6;
+    }
+}
