@@ -75,6 +75,11 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .main__tittle {
+    font-size: 55px;
+    padding-right: 1em;
+  }
+
   .box__container {
     width: 78%;
   }
